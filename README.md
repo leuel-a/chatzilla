@@ -27,11 +27,10 @@ python -m venv env
 source env/bin/activate
 
 3. Install the dependencies:
-cd chatzilla
-pip install -r requirements.txt
-
-markdown
-Copy code
+```angular2html
+    cd chatzilla
+    pip install -r requirements.txt
+```
 
 4. Configure the database:
 - Set up a MySQL database.
@@ -41,6 +40,10 @@ Copy code
 python app.py
 
 6. Open your web browser and visit `http://localhost:5000` to access the Chatzilla application.
+
+## Screenshots
+![Chatzilla Login Page](chatzilla/home_page.png)
+![Chatzilla Chat Page](chatzilla/register.png)
 
 ## Contributing
 
