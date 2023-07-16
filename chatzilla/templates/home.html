@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+    <section id="intro">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4 text-secondary text-center">ChatZilla</h1>
+                    <span class="display-5 text-muted text-center d-block">Chatzilla: where conversations come to life!</span>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p class="lead text-muted p-3 bg-light" style="font-size: 1.2rem;">
+                                  Welcome to Chatzilla, the ultimate chat application for connecting with friends and family.
+                                  Unleash your social butterfly and chat with anyone, anywhere, anytime. Customize your chat
+                                  experience with our intuitive interface and advanced features, including private messaging and
+                                  group chats. Sign up today and stay connected with our powerful platform and dedicated support team.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{{ url_for('static', filename='images/chatzilla-home.png') }}" alt="Home Page" style="width: 600px; height: auto;">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <a href="{{ url_for('login') }}" class="btn btn-secondary m-3">Login</a>
+                    <a href="{{ url_for('register') }}" class="btn btn-secondary m-3">Register</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

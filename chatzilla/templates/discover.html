@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1 class="h3 text-muted fw-bold">Discover People</h1>
+    <div class="container">
+        <div class="row border py-3" style="min-height: 500px;">
+            <div class="col-md-4 border-right d-flex flex-column">
+                <div class="users-header border-bottom">
+                    <span class="h4 pr-3 fw-bold">Users</span>
+                </div>
+                <div class="container d-flex flex-column align-items-start pt-3" style="height: 400px; overflow-y: auto;" data-simplebar>
+                    <ul class="list-group">
+                        {% for user in users %}
+                            {% if user.username != current_user.username %}
+                                <li class="list-group-item">
+                                    <div class="container d-flex">
+                                        <img
+                                                src="{{ url_for('static', filename='profile_pics/' + user.image_file) }}"
+                                                alt="{{ user.username }} profile picture"
+                                                class="rounded-circle article-img"
+                                        >
+                                        <div class="d-flex align-items-start flex-column justify-content-center">
+                                            <span class="text-info">{{ user.username }}</span>
+                                            <span class="text-secondary">{{ user.email }}</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+
+            </div>
+        </div>
+    </div>
+{% endblock content %}

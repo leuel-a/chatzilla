@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>My Rooms</h1>
+    <ul>
+        {% for room in rooms %}
+            <div class="content-section container">
+                <h3>{{ room.name }}</h3>
+            </div>
+        {% endfor %}
+    </ul>
+{% endblock %}

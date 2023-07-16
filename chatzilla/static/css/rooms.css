@@ -1,0 +1,15 @@
+#message-space {
+    min-height: 420px;
+}
+
+#message-input {
+    width: 500px;
+}
+
+.modal-title {
+    color: white;
+}
+
+.selected-room {
+    color: #6f6860;
+}
