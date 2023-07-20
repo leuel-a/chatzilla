@@ -1,6 +1,6 @@
 # Chatzilla
 
-Chatzilla is a simple chat application developed as part of the ALX Software Engineering Program portfolio project. It allows users to connect and chat with each other in real-time.
+Chatzilla is a simple chat application that allows users to connect and chat with each other in real-time.
 
 ## Features
 
