@@ -11,7 +11,7 @@ Chatzilla is a simple chat application developed as part of the ALX Software Eng
 
 ## Technologies Used
 
-- Front-end: HTML, CSS, JavaScript
+- Front-end: HTML, CSS, JavaScript, jQuery, Bootstrap
 - Back-end: Flask (Python)
 - Database: MySQL
 - WebSockets: Socket.IO
